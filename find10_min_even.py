@@ -5,5 +5,5 @@ def find_min_even(data):
         data: list of numbers
     returns: minimum even number in the list
     """
-    return 0
-
+    return min(data, key=lambda x: x if x%2==0 else float('inf'))
+print(find_min_even([1,2,3,4,5,6]))

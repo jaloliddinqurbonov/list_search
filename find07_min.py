@@ -6,4 +6,4 @@ def find_min(data):
     returns: minimum number in the list
     """
 
-    return 0
+    return min(data)

@@ -5,4 +5,5 @@ def find_max_odd(data):
         data: list of numbers
     returns: maximum odd number in the list
     """
-    return 0
+    return max(data,key=lambda x:x if x%2==1 else 0)
+print(find_max_odd([1,2,3,4,5,6,7]))
